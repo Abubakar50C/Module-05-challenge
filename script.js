@@ -1,7 +1,14 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+
+var makePast = element.classList.add("past");
+var makePresent = element.classList.add("present");
+var makeFuture = element.classList.add("future");
+var button = document.getElementsByClassName('saveBtn')
 $(function () {
+    button.addEventListener('click', )
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -14,6 +21,10 @@ $(function () {
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
+
+  //Use a way of comparison to make an if state for when the time of the event is before or after
+  //current time(find with day.js), use a the appropriate variable to add a class.
+
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
